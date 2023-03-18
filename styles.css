@@ -1,0 +1,191 @@
+/* general reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  /* color-scheme: dark light; */
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+/* ============================================================ */
+
+/* header */
+
+.header-nav {
+  background-color: rgb(5, 112, 76);
+  min-height: 5rem;
+}
+
+.header-nav ul {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 15rem;
+  list-style: none;
+  letter-spacing: .2rem;
+}
+
+.header-links a {
+  transition: all .2s linear;
+  background-color: transparent;
+  color: #fedd88;
+  text-decoration: none;
+}
+
+.logo-container {
+  position: absolute;
+  margin: .5rem 1rem;
+
+}
+
+.logo {
+  width: 4rem;
+}
+
+@media only screen and (max-width: 1465px){
+  .logo {
+    display: none;
+  }
+
+  .header-nav {
+    height: auto;
+  }
+
+  .header-nav ul {
+    gap: 5rem;
+  }
+  }
+
+/* Main */
+
+.title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: aquamarine;
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-size: 1.8rem;
+}
+
+.intro{
+  padding: 3rem 0 4rem 0;
+  text-align: center;
+}
+
+.intro h2 {
+  padding-bottom: 2rem;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.intro p {
+  padding-bottom: 1rem;
+  font-family: 'EB Garamond', serif; 
+  font-size: 1.1rem;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.pictures img {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1048px) {
+  .pictures {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .pictures img {
+    width: 100%;
+    padding:1rem;
+  }
+
+  #testimonials {
+    font-size: .8rem;
+    margin-top: 4rem;
+  }
+
+  .intro {
+    padding: 3rem 0 1rem 0;
+  }
+
+  #join {
+    margin: 5rem 0 2rem 0;
+    font-size: .8rem;
+  }
+  
+}
+
+@media only screen and (max-width: 805px){
+  #testimonials {
+    margin-top: 38px;
+  }
+}
+
+#testimonials {
+  padding: 2rem 0;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(243, 186, 129, 0.43);
+}
+
+#join {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8rem;
+}
+
+.large-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.large-picture img {
+  width: 40%;
+}
+
+.pic-bottom-text {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.7rem;
+}
+
+.reach-us {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fedd88;
+}
+
+
+
